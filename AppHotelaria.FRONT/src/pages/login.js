@@ -1,12 +1,20 @@
 import LoginForm from "../components/LoginForm.js";
+import Navbar from "../components/Navbar.js";
  
 export default function renderLoginPage() {
+    const nav = document.getElementById('navbar');
+    nav.innerHTML = "";
+
+    const navbar = Navbar();
+    nav.appendChild(navbar);
+
     const divRoot = document.getElementById('root');
-
     divRoot.innerHTML = '';
+    const formulario = LoginForm();
 
-    const titulo = document.createElement('h1')
-    titulo.textContent = 'Faça o login ou crie uma conta';
+
+    const titulo = document.createElement('h1');
+    titulo.textContent = 'Faça login ou crie uma conta';
     titulo.className = 'titulo';
 
 
@@ -18,7 +26,6 @@ export default function renderLoginPage() {
      //Até que atinja o maximo de 400px
     divRoot.appendChild(container); //divRoot contém a nova div
 
-    const formulario = LoginForm();
 
     container.appendChild(titulo);
     container.appendChild(formulario); //Nova div container, já dentro de divRoot, contém o form

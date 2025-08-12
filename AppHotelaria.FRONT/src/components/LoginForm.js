@@ -1,6 +1,7 @@
 export default function LoginForm() {
 
     const formulario = document.createElement('form');
+    formulario.className = 'd-flex flex-column';
  
     const email = document.createElement('input');
     email.type = 'email';
@@ -16,7 +17,7 @@ export default function LoginForm() {
 
     
     const button = document.createElement('button');
-    button.type = 'button';
+    button.type = 'submit';
     button.textContent = 'Entrar';
     formulario.appendChild(button);
     button.className= 'button btn-primary'

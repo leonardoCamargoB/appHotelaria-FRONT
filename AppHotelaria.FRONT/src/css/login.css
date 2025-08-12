@@ -1,10 +1,25 @@
 input {
-    border-style: solid;
-    border-color: aquamarine;
+    border-style: solid; 
+    border-color: rgb(117, 171, 233);
     border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-.btn-primary:hover {
-    background-color: rgb(126, 221, 216);
-    border-color: aquamarine;
+imput:focus {
+    outline: none;
+        border: 1px solid;
+    
+}
+
+
+.btn-primary {
+    background-color: rgb(3, 65, 136);
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: rgb(1, 49, 104);
+    color: antiquewhite;
+
 }
