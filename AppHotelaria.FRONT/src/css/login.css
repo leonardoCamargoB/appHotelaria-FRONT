@@ -1,0 +1,10 @@
+input {
+    border-style: solid;
+    border-color: aquamarine;
+    border-radius: 10px;
+}
+
+.btn-primary:hover {
+    background-color: rgb(126, 221, 216);
+    border-color: aquamarine;
+}
